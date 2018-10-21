@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048E6CB32176089F00C6C488 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 048E6CB22176089F00C6C488 /* main.c */; };
-		048E6CBB217608A600C6C488 /* single_link_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 048E6CBA217608A600C6C488 /* single_link_list.c */; };
+		048E6CF5217B5F1400C6C488 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 048E6CF4217B5F1400C6C488 /* main.c */; };
+		048E6CFD217B5F2600C6C488 /* single_link_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 048E6CFC217B5F2600C6C488 /* single_link_list.c */; };
+		048E6D00217B5F3400C6C488 /* leetCode.c in Sources */ = {isa = PBXBuildFile; fileRef = 048E6CFF217B5F3400C6C488 /* leetCode.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		048E6CAD2176089F00C6C488 /* CopyFiles */ = {
+		048E6CEF217B5F1400C6C488 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		048E6CAF2176089F00C6C488 /* single_link_list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = single_link_list; sourceTree = BUILT_PRODUCTS_DIR; };
-		048E6CB22176089F00C6C488 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		048E6CB9217608A600C6C488 /* single_link_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = single_link_list.h; sourceTree = "<group>"; };
-		048E6CBA217608A600C6C488 /* single_link_list.c */ = {isa = PBXFileReference; fileEncoding = 2147484170; lastKnownFileType = sourcecode.c.c; path = single_link_list.c; sourceTree = "<group>"; };
+		048E6CF1217B5F1400C6C488 /* leetCode-LinkList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetCode-LinkList"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048E6CF4217B5F1400C6C488 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		048E6CFB217B5F2600C6C488 /* single_link_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = single_link_list.h; path = ../../single_link_list/single_link_list/single_link_list.h; sourceTree = "<group>"; };
+		048E6CFC217B5F2600C6C488 /* single_link_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = single_link_list.c; path = ../../single_link_list/single_link_list/single_link_list.c; sourceTree = "<group>"; };
+		048E6CFE217B5F3400C6C488 /* leetCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leetCode.h; sourceTree = "<group>"; };
+		048E6CFF217B5F3400C6C488 /* leetCode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = leetCode.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		048E6CAC2176089F00C6C488 /* Frameworks */ = {
+		048E6CEE217B5F1400C6C488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,97 +44,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		048E6CA62176089F00C6C488 = {
+		048E6CE8217B5F1400C6C488 = {
 			isa = PBXGroup;
 			children = (
-				048E6CB12176089F00C6C488 /* single_link_list */,
-				048E6CB02176089F00C6C488 /* Products */,
+				048E6CF3217B5F1400C6C488 /* leetCode-LinkList */,
+				048E6CF2217B5F1400C6C488 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		048E6CB02176089F00C6C488 /* Products */ = {
+		048E6CF2217B5F1400C6C488 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				048E6CAF2176089F00C6C488 /* single_link_list */,
+				048E6CF1217B5F1400C6C488 /* leetCode-LinkList */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		048E6CB12176089F00C6C488 /* single_link_list */ = {
+		048E6CF3217B5F1400C6C488 /* leetCode-LinkList */ = {
 			isa = PBXGroup;
 			children = (
-				048E6CB22176089F00C6C488 /* main.c */,
-				048E6CB9217608A600C6C488 /* single_link_list.h */,
-				048E6CBA217608A600C6C488 /* single_link_list.c */,
+				048E6CF4217B5F1400C6C488 /* main.c */,
+				048E6CFC217B5F2600C6C488 /* single_link_list.c */,
+				048E6CFB217B5F2600C6C488 /* single_link_list.h */,
+				048E6CFE217B5F3400C6C488 /* leetCode.h */,
+				048E6CFF217B5F3400C6C488 /* leetCode.c */,
 			);
-			path = single_link_list;
+			path = "leetCode-LinkList";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		048E6CAE2176089F00C6C488 /* single_link_list */ = {
+		048E6CF0217B5F1400C6C488 /* leetCode-LinkList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 048E6CB62176089F00C6C488 /* Build configuration list for PBXNativeTarget "single_link_list" */;
+			buildConfigurationList = 048E6CF8217B5F1400C6C488 /* Build configuration list for PBXNativeTarget "leetCode-LinkList" */;
 			buildPhases = (
-				048E6CAB2176089F00C6C488 /* Sources */,
-				048E6CAC2176089F00C6C488 /* Frameworks */,
-				048E6CAD2176089F00C6C488 /* CopyFiles */,
+				048E6CED217B5F1400C6C488 /* Sources */,
+				048E6CEE217B5F1400C6C488 /* Frameworks */,
+				048E6CEF217B5F1400C6C488 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = single_link_list;
-			productName = single_link_list;
-			productReference = 048E6CAF2176089F00C6C488 /* single_link_list */;
+			name = "leetCode-LinkList";
+			productName = "leetCode-LinkList";
+			productReference = 048E6CF1217B5F1400C6C488 /* leetCode-LinkList */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		048E6CA72176089F00C6C488 /* Project object */ = {
+		048E6CE9217B5F1400C6C488 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "齐家科技";
 				TargetAttributes = {
-					048E6CAE2176089F00C6C488 = {
+					048E6CF0217B5F1400C6C488 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 048E6CAA2176089F00C6C488 /* Build configuration list for PBXProject "single_link_list" */;
+			buildConfigurationList = 048E6CEC217B5F1400C6C488 /* Build configuration list for PBXProject "leetCode-LinkList" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 048E6CA62176089F00C6C488;
-			productRefGroup = 048E6CB02176089F00C6C488 /* Products */;
+			mainGroup = 048E6CE8217B5F1400C6C488;
+			productRefGroup = 048E6CF2217B5F1400C6C488 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				048E6CAE2176089F00C6C488 /* single_link_list */,
+				048E6CF0217B5F1400C6C488 /* leetCode-LinkList */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		048E6CAB2176089F00C6C488 /* Sources */ = {
+		048E6CED217B5F1400C6C488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048E6CB32176089F00C6C488 /* main.c in Sources */,
-				048E6CBB217608A600C6C488 /* single_link_list.c in Sources */,
+				048E6D00217B5F3400C6C488 /* leetCode.c in Sources */,
+				048E6CF5217B5F1400C6C488 /* main.c in Sources */,
+				048E6CFD217B5F2600C6C488 /* single_link_list.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		048E6CB42176089F00C6C488 /* Debug */ = {
+		048E6CF6217B5F1400C6C488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		048E6CB52176089F00C6C488 /* Release */ = {
+		048E6CF7217B5F1400C6C488 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +246,7 @@
 			};
 			name = Release;
 		};
-		048E6CB72176089F00C6C488 /* Debug */ = {
+		048E6CF9217B5F1400C6C488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		048E6CB82176089F00C6C488 /* Release */ = {
+		048E6CFA217B5F1400C6C488 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -261,25 +267,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		048E6CAA2176089F00C6C488 /* Build configuration list for PBXProject "single_link_list" */ = {
+		048E6CEC217B5F1400C6C488 /* Build configuration list for PBXProject "leetCode-LinkList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				048E6CB42176089F00C6C488 /* Debug */,
-				048E6CB52176089F00C6C488 /* Release */,
+				048E6CF6217B5F1400C6C488 /* Debug */,
+				048E6CF7217B5F1400C6C488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		048E6CB62176089F00C6C488 /* Build configuration list for PBXNativeTarget "single_link_list" */ = {
+		048E6CF8217B5F1400C6C488 /* Build configuration list for PBXNativeTarget "leetCode-LinkList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				048E6CB72176089F00C6C488 /* Debug */,
-				048E6CB82176089F00C6C488 /* Release */,
+				048E6CF9217B5F1400C6C488 /* Debug */,
+				048E6CFA217B5F1400C6C488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 048E6CA72176089F00C6C488 /* Project object */;
+	rootObject = 048E6CE9217B5F1400C6C488 /* Project object */;
 }
