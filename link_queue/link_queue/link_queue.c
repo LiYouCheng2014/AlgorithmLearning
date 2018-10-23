@@ -1,8 +1,8 @@
 //
 //  link_queue.c
-//  link_queue
+//  leetCode-0225
 //
-//  Created by liyoucheng on 2018/10/20.
+//  Created by liyoucheng on 2018/10/22.
 //  Copyright © 2018年 齐家科技. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 
 /**
  队是否空
-
+ 
  @param queue 队
  @return 是否空
  */
@@ -23,8 +23,19 @@ bool link_queue_is_empty(LinkQueue *queue)
 }
 
 /**
- 创建队
+ 队长度
 
+ @param queue 队
+ @return 长度
+ */
+int link_queue_length(LinkQueue *queue)
+{
+    return queue->num;
+}
+
+/**
+ 创建队
+ 
  @return 队
  */
 LinkQueue *link_queue_create()
@@ -42,11 +53,11 @@ LinkQueue *link_queue_create()
 }
 
 /**
- 出队
-
+ 入队
+ 
  @param queue 队
- @param data 出队数据
- @return 是否出队成功
+ @param data 入队数据
+ @return 是否出入成功
  */
 int link_queue_enqueue(LinkQueue *queue, int data)
 {
@@ -74,11 +85,11 @@ int link_queue_enqueue(LinkQueue *queue, int data)
 }
 
 /**
- 入队
-
+ 出队
+ 
  @param queue 队
- @param data 入队数据
- @return 是否入队成功
+ @param data 出队数据
+ @return 是否出队成功
  */
 int link_queue_dequeue(LinkQueue *queue, int *data)
 {
@@ -102,7 +113,7 @@ int link_queue_dequeue(LinkQueue *queue, int *data)
 
 /**
  销毁队
-
+ 
  @param queue 队
  */
 void link_queue_destroy(LinkQueue *queue)
@@ -120,7 +131,7 @@ void link_queue_destroy(LinkQueue *queue)
 
 /**
  队遍历
-
+ 
  @param queue 队
  */
 void link_queue_dump(LinkQueue *queue)
@@ -139,6 +150,7 @@ void link_queue_dump(LinkQueue *queue)
         temp = temp->next;
     }
 }
+
 
 /**
  测试
@@ -174,5 +186,4 @@ void test()
     link_queue_enqueue(queue, data);
     link_queue_dump(queue);
 }
-
 

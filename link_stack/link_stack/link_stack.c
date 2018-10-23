@@ -1,8 +1,8 @@
 //
 //  link_stack.c
-//  link_stack
+//  leetCode-0232
 //
-//  Created by liyoucheng on 2018/10/15.
+//  Created by liyoucheng on 2018/10/23.
 //  Copyright © 2018年 齐家科技. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 
 /**
  获取栈是否空
-
+ 
  @param stack 栈
  @return 是否空
  */
@@ -26,7 +26,7 @@ bool link_stack_is_empty(LinkStack *stack)
 
 /**
  初始化栈
-
+ 
  @return 栈
  */
 LinkStack *link_stack_create()
@@ -42,7 +42,7 @@ LinkStack *link_stack_create()
 
 /**
  销毁栈
-
+ 
  @param stack 栈
  */
 void link_stack_destory(LinkStack *stack)
@@ -58,7 +58,7 @@ void link_stack_destory(LinkStack *stack)
 
 /**
  出栈
-
+ 
  @param stack 栈
  @param data 栈顶元素
  @return 是否出栈成功
@@ -78,6 +78,29 @@ int link_stack_pop(LinkStack *stack, int *data)
     stack->next = temp->next;
     
     free(temp);
+    
+    return 0;
+}
+
+
+/**
+ 栈顶元素
+
+ @param stack 栈
+ @param data 栈顶元素
+ @return 是否获取栈顶成功
+ */
+int link_stack_top(LinkStack *stack, int *data)
+{
+    if (data == NULL) {
+        return -1;
+    }
+    
+    if (link_stack_is_empty(stack)) {
+        return -1;
+    }
+    
+    *data = stack->next->data;
     
     return 0;
 }
@@ -105,7 +128,7 @@ int link_stack_push(LinkStack *stack, int data)
 
 /**
  遍历栈
-
+ 
  @param stack 栈
  */
 void link_stack_dump(LinkStack *stack)
