@@ -10,9 +10,7 @@
 
 #include <string.h>
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
+#define max(a,b) (a > b ? a : b)
 
 int lengthOfLongestSubstring(char* s) {
     int m[128];

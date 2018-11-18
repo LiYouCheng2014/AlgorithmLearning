@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
 //    test_0002();
 //    test_0003();
 //    test_0004();
-//    test();
+    test();
     
     return 0;
 }

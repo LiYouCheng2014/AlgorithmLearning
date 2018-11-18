@@ -81,7 +81,12 @@ typedef struct BiThrNode
     PointerTag Rtag;
 }BiThrNode, *BiThrTree;
 
-
+//leetCode
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 
 #endif /* Tree_h */

@@ -8,8 +8,7 @@
 
 #include "leetCode-0004.h"
 
-double find_kth(int a[], int alen, int b[], int blen, int k)
-{
+double find_kth(int a[], int alen, int b[], int blen, int k) {
     if (alen > blen) {
         return find_kth(b, blen, a, alen, k);
     }

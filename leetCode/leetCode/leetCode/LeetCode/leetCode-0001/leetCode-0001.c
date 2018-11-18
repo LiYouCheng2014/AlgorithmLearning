@@ -16,8 +16,7 @@ struct object {
     int value;
 };
 
-int compare(const void *a, const void *b)
-{
+int compare(const void *a, const void *b) {
     return ((struct object*)a)->value - ((struct object*)b)->value;
 }
 
