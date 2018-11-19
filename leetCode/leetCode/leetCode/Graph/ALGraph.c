@@ -12,10 +12,13 @@
 #include <stdbool.h>
 
 #include "Graph.h"
+
+#include "LinkQueue.h"
+
 //邻接表
 Boolean al_visited[MAXSIZE];
 
-void CreateALGraph(GraphAdjList *G)
+void al_CreateGraph(GraphAdjList *G)
 {
     printf("输入顶点数和边数:\n");
     scanf("%d,%d",&G->numVertexes,&G->numEdges);
@@ -44,7 +47,7 @@ void CreateALGraph(GraphAdjList *G)
 
 //DFS
 
-void AL_DFS(GraphAdjList G, int i)
+void al_DFS(GraphAdjList G, int i)
 {
     al_visited[i] = TRUE;
     
@@ -53,13 +56,13 @@ void AL_DFS(GraphAdjList G, int i)
     
     while (p) {
         if (!al_visited[p->adjvex]) {
-            AL_DFS(G, p->adjvex);
+            al_DFS(G, p->adjvex);
         }
         p = p->next;
     }
 }
 
-void AL_DFSTraverse(GraphAdjList G)
+void al_DFSTraverse(GraphAdjList G)
 {
     for (int i = 0; i < G.numVertexes; i++) {
         al_visited[i] = FALSE;
@@ -67,8 +70,42 @@ void AL_DFSTraverse(GraphAdjList G)
     
     for (int i = 0; i < G.numVertexes; i++) {
         if (!al_visited[i]) {
-            AL_DFS(G, i);
+            al_DFS(G, i);
         }
     }
 }//O(n+e)
+
+
+void BFSTraverse(GraphAdjList G)
+{
+    for (int i = 0; i < G.numVertexes; i++) {
+        al_visited[i] = FALSE;
+    }
+    
+    EdgeNode *p;
+    
+    LinkQueue *Q = lq_InitQueue();
+    int i = 0;
+    for (i = 0; i < G.numVertexes; i++) {
+        if (!al_visited[i]) {
+            al_visited[i] = TRUE;
+            printf("%c ", G.adjList[i].data);
+            
+            lq_EnQueue(Q, i);
+            while (!lq_QueueIsEmpty(Q)) {
+                lq_DeQueue(Q, &i);
+                
+                p = G.adjList[i].firstedge;
+                while (p) {
+                    if (!al_visited[p->adjvex]) {
+                        al_visited[p->adjvex] = TRUE;
+                        printf("%c ", G.adjList[p->adjvex].data);
+                        lq_EnQueue(Q, p->adjvex);
+                    }
+                    p = p->next;
+                }
+            }
+        }
+    }
+}
 

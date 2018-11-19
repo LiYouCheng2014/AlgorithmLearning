@@ -11,6 +11,9 @@
 
 #include "comman.h"
 
+//深度优先更适合目标比较明确以找到目标为主要目的的情况
+//广度优先更适合在不断扩大遍历时找到相对最优解的情况
+
 typedef struct
 {
     VertexType vexs[MAXSIZE];
@@ -41,5 +44,14 @@ typedef struct
     int numVertexes;
     int numEdges;
 }GraphAdjList;
+
+//对边集数组Edge结构的定义
+typedef struct
+{
+    int begin;
+    int end;
+    int weight;
+}Edge;
+
 
 #endif /* Graph_h */
