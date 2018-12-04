@@ -26,6 +26,7 @@
 		045FA88D21A1B03D0030ED7B /* leetCode-0104.c in Sources */ = {isa = PBXBuildFile; fileRef = 045FA88C21A1B03D0030ED7B /* leetCode-0104.c */; };
 		045FA89121A1B2670030ED7B /* leetCode-0111.c in Sources */ = {isa = PBXBuildFile; fileRef = 045FA89021A1B2670030ED7B /* leetCode-0111.c */; };
 		045FA89521A1B86D0030ED7B /* leetCode-0022.c in Sources */ = {isa = PBXBuildFile; fileRef = 045FA89421A1B86D0030ED7B /* leetCode-0022.c */; };
+		045FA91521AAD8E40030ED7B /* Search.c in Sources */ = {isa = PBXBuildFile; fileRef = 045FA91421AAD8E40030ED7B /* Search.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +86,8 @@
 		045FA89021A1B2670030ED7B /* leetCode-0111.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "leetCode-0111.c"; sourceTree = "<group>"; };
 		045FA89321A1B86D0030ED7B /* leetCode-0022.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "leetCode-0022.h"; sourceTree = "<group>"; };
 		045FA89421A1B86D0030ED7B /* leetCode-0022.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "leetCode-0022.c"; sourceTree = "<group>"; };
+		045FA91321AAD8E40030ED7B /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		045FA91421AAD8E40030ED7B /* Search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Search.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				045FA88321A123240030ED7B /* Tree */,
 				045FA85C21A0F2960030ED7B /* Graph */,
 				04161FC7219EF5C200A936C8 /* main.c */,
+				045FA91321AAD8E40030ED7B /* Search.h */,
+				045FA91421AAD8E40030ED7B /* Search.c */,
 			);
 			path = leetCode;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				045FA87B21A11DC30030ED7B /* ArrayStack.c in Sources */,
 				04161FD4219EF8D700A936C8 /* LinkList.c in Sources */,
 				045FA88D21A1B03D0030ED7B /* leetCode-0104.c in Sources */,
+				045FA91521AAD8E40030ED7B /* Search.c in Sources */,
 				045FA89521A1B86D0030ED7B /* leetCode-0022.c in Sources */,
 				04161FE2219F156F00A936C8 /* leetCode-0004.c in Sources */,
 				045FA87721A11AD20030ED7B /* StaticList.c in Sources */,
